@@ -50,12 +50,12 @@ for (var num = 0; num < max_num; num = num + 1) {
 - functions
 ```sh
 `print fizzbuzz for numbers up to n.
-fun fizzbuzz(n){
+fun fizzbuzz(n) {
     var fizz = "fizz";
     var buzz = "buzz";
     if (n < 1) print "n is " + n + ". pick a value greater than 0.";
 
-    for (var i = 1; i <= n; i = i + 1){
+    for (var i = 1; i <= n; i = i + 1) {
         var div_by_three = i % 3 == 0;
         var div_by_five = i % 5 == 0;
         
