@@ -1,0 +1,30 @@
+var a;
+var b = 10;
+a = 3;
+var c = a * b;
+print a;
+print b;
+print c;
+
+`determines if n is even.
+fun is_even(n) {
+    return (n % 2) == 0;
+}
+
+for (var i = 1; i < 10; i = i + 1) {
+    print is_even(i);
+}
+
+`computes factorial of n.
+fun factorial(n) {
+    var res = 1;
+    var tmp = n;
+    while (n) {
+        res = res * n;
+        n = n - 1;
+    }
+
+    return "factorial of " + tmp + ": " + res;
+}
+
+print factorial(5);

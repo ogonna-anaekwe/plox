@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# vscode settings
+.vscode/
+
+# REF: https://github.com/github/gitignore/blob/main/Python.gitignore
