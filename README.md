@@ -55,28 +55,23 @@ fun fizzbuzz(n){
     var buzz = "buzz";
     if (n < 1) print "n is " + n + ". pick a value greater than 0.";
 
-
     for (var i = 1; i <= n; i = i + 1){
         var div_by_three = i % 3 == 0;
         var div_by_five = i % 5 == 0;
         
-        if (div_by_three and div_by_five){`
+        if (div_by_three and div_by_five) {
             print fizz + buzz;
+        } else if (div_by_three) {
+            print fizz;
+        } else if (div_by_five) {
+            print buzz;
         } else {
-            if (div_by_three){
-                print fizz;
-            } else {
-                if (div_by_five){
-                    print buzz;
-                } else {
-                    print i + " ";
-                }
-            }
-        }
+            print i + " ";
+        }            
     }
 }
 
-fizzbuzz(10);
+fizzbuzz(21);
 ```
 
 - closures (and currying)
