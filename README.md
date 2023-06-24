@@ -105,6 +105,12 @@ Given a string representing valid plox code, we:
 All three a performed via `Scanner`, `Parser`, and `Interpreter` respectively.
 
 ## Grammar
+Take note of this mapping for the grammar that follows:
+`*` means 0 or more occurrences
+`?` means optional
+`|` means to select one
+
+And now the grammar.
 ```txt
 program -> declaration* EOF ;
 declaration -> variable_declaration | function_declaration | statement ;
